@@ -43,8 +43,7 @@ namespace PDBParser {
    */
     HANDLE CurrentHandle = OpenProcess(PROCESS_ALL_ACCESS, false, GetCurrentProcessId());
     if (CurrentHandle != INVALID_HANDLE_VALUE) {
-      bool SymbolsPathInit = SymInitialize(
-        CurrentHandle, fs::current_path().string().c_str(), false);
+      bool SymbolsPathInit = SymInitialize(CurrentHandle, fs::current_path().string().c_str(), false);
       if (SymbolsPathInit) {
         SymSetOptions(SymGetOptions() | SYMOPT_CASE_INSENSITIVE | SYMOPT_LOAD_ANYTHING);
         SymSetSearchPath(CurrentHandle, fs::current_path().string().c_str());
