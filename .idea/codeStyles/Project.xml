@@ -2,9 +2,11 @@
   <code_scheme name="Project" version="173">
     <option name="RIGHT_MARGIN" value="150" />
     <Objective-C>
+      <option name="INDENT_NAMESPACE_MEMBERS" value="1" />
+      <option name="INDENT_C_STRUCT_MEMBERS" value="1" />
       <option name="INDENT_CLASS_MEMBERS" value="2" />
       <option name="INDENT_VISIBILITY_KEYWORDS" value="1" />
-      <option name="INDENT_INSIDE_CODE_BLOCK" value="2" />
+      <option name="INDENT_INSIDE_CODE_BLOCK" value="1" />
       <option name="NAMESPACE_BRACE_PLACEMENT" value="2" />
       <option name="FUNCTION_BRACE_PLACEMENT" value="2" />
       <option name="BLOCK_BRACE_PLACEMENT" value="2" />
@@ -43,9 +45,6 @@
         <rule entity="GLOBAL_VARIABLE,PARAMETER,LOCAL_VARIABLE" visibility="ANY" specifier="ANY" prefix="" style="SNAKE_CASE" suffix="" />
       </rules>
     </Objective-C-extensions>
-    <clangFormatSettings>
-      <option name="ENABLED" value="true" />
-    </clangFormatSettings>
     <codeStyleSettings language="ObjectiveC">
       <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
       <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
@@ -70,7 +69,7 @@
         <option name="INDENT_SIZE" value="2" />
         <option name="CONTINUATION_INDENT_SIZE" value="4" />
         <option name="USE_TAB_CHARACTER" value="true" />
-        <option name="LABEL_INDENT_SIZE" value="-4" />
+        <option name="LABEL_INDENT_SIZE" value="-2" />
       </indentOptions>
     </codeStyleSettings>
   </code_scheme>
